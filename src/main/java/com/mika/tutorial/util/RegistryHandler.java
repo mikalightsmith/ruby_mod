@@ -7,6 +7,7 @@ import com.mika.tutorial.items.ItemBase;
 import com.mika.tutorial.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -27,8 +28,10 @@ public class RegistryHandler {
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
-            // attack speed = 4(base) + added damage
             new SwordItem(ModItemTier.RUBY, 2, 0.0F, new Item.Properties().group(Tutorial.TAB)));
+
+    public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () ->
+            new PickaxeItem(ModItemTier.RUBY, 0, -1.0F, new Item.Properties().group(Tutorial.TAB)));
 
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
