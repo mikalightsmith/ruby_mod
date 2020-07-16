@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "x|x",
+    "sss"
+  ],
+  "key": {
+    "x": {
+      "item": "tutorial:ruby"
+    },
+    "|": {
+      "item": "minecraft:stone_sword"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tutorial:ruby_sword",
+    "count": 1
+  }
+}
