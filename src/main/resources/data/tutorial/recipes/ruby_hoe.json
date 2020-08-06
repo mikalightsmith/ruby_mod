@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xhx",
+    "|||"
+  ],
+  "key": {
+    "x": {
+      "item": "tutorial:ruby"
+    },
+    "h": {
+      "item": "minecraft:stone_hoe"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tutorial:ruby_",
+    "count": 1
+  }
+}

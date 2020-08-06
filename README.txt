@@ -1,3 +1,7 @@
+# Reference
+
+Minecraft IDS: https://minecraft-ids.grahamedgecombe.com/
+
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------

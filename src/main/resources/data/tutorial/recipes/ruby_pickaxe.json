@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xpx",
+    "|||"
+  ],
+  "key": {
+    "x": {
+      "item": "tutorial:ruby"
+    },
+    "p": {
+      "item": "minecraft:stone_pickaxe"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tutorial:ruby_pickaxe",
+    "count": 1
+  }
+}
