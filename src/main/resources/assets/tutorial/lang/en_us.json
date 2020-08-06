@@ -3,5 +3,14 @@
   "block.tutorial.ruby_block": "Block of ruby",
   "itemGroup.tutorialTab": "Ruby",
   "item.tutorial.ruby_sword": "Ruby sword",
-  "item.tutorial.ruby_pickaxe": "Ruby pickaxe"
+  "item.tutorial.ruby_pickaxe": "Ruby pickaxe",
+  "item.tutorial.ruby_axe": "Ruby axe",
+  "item.tutorial.ruby_hoe": "Ruby hoe",
+  "item.tutorial.ruby_shovel": "Ruby shovel",
+  "item.tutorial.ruby_helmet": "Ruby Helmet",
+  "item.tutorial.ruby_chestplate": "Ruby Chestplate",
+  "item.tutorial.ruby_laginges": "Ruby laginges",
+  "item.tutorial.ruby_boots": "Ruby boots"
 }
+
+
