@@ -5,6 +5,7 @@ import com.mika.tutorial.armor.ModArmorMaterial;
 import com.mika.tutorial.blocks.BlockItemBase;
 import com.mika.tutorial.blocks.RubyBlock;
 import com.mika.tutorial.items.ItemBase;
+import com.mika.tutorial.items.MaxHealthIceCream;
 import com.mika.tutorial.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -25,6 +26,8 @@ public class RegistryHandler {
 
     // Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<MaxHealthIceCream> MAX_HEALTH_ICE_CREAM = ITEMS.register(
+    "max_health_ice_cream", MaxHealthIceCream::new);
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
