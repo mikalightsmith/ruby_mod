@@ -22,7 +22,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
             3 // boots
     }, 29, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2, () -> {
         return Ingredient.fromItems(RegistryHandler.RUBY.get());
-    });
+    }, 3);
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{11, 16, 15, 13};
     private final String name;
@@ -32,9 +32,11 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
+    private final float knockbackResistence;
 
     ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability,
-                     SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+                     SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial,
+                     float knockbackResistence) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmountArray;
@@ -42,6 +44,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         this.toughness = toughness;
         this.repairMaterial = repairMaterial;
         this.soundEvent = soundEvent;
+        this.knockbackResistence = knockbackResistence;
     }
 
 
@@ -80,4 +83,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     public float getToughness() {
         return this.toughness;
     }
+
+    // knockback resistence value
+    @Override
+    public float func_230304_f_() {
+        return this.knockbackResistence;
     }
+}
